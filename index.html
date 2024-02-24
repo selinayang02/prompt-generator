@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prompt Generator</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background">
+   <div class="container-box">
+      <div class="title-box">
+         <div class="text-container">
+            <h1>PROMPT</h1>
+            <h2>generator</h2>
+         </div>
+      </div>
+      <p id="prompt-box">Input the names of two characters (optional) and press the button of the genre that you would like...</p>
+      <div class="buttons-container">
+         <button id="romance-button" class="genre-button" onclick="prompt_gen(0);">romance</button>
+         <button id="fantasy-button" class="genre-button" onclick="prompt_gen(1)">fantasy</button>
+         <button id="horror-button" class="genre-button" onclick="prompt_gen(2)">horror</button>
+         <button id="mystery-button" class="genre-button" onclick="prompt_gen(3)">mystery</button>
+      </div>
+      <form method="get">
+         <div>
+            <label for="character-1">Character A</label>
+            <input type="text" class="character-box" name="character-1" id="character-1" mysterytocomplete="off" placeholder="Name of your first character...">
+         </div>
+         <div>
+            <label for="character-2">Character B</label>
+            <input type="text" class="character-box" name="character-2" id="character-2" mysterytocomplete="off" placeholder="Name of your second character...">
+         </div>
+      </form>
+   </div>
+   <div class="cloud-container">
+      <div class="cloud1"></div>
+      <div class="cloud2"></div>
+      <div class="cloud3"></div>
+   </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
